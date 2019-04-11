@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script type="application/javascript">
+let n = 10
+let prod = 4895
+
+function F(n, prod) {
+    if (n < 2) return n;
+    
+    let condition = F(n) * F(n + 1)
+    console.log(condition)
+
+    if (condition == prod) {
+        return [F(n), F(n + 1), 1]
+    }
+
+    return F(n - 1) + F(n - 2)
+}
+
+let result = F(n, prod)
+console.log(result)
+</script>
+<!-- <script type="application/javascript">
+    function cakes(recipe, available) {
+        const sort = (a,b) => a > b;
+        let recipeValues = []
+        let availableValues = []
+        
+        Object.entries(available).filter(x => x > 1)
+        Object.entries(recipe).map(x => recipeValues.push(x[1]))
+
+        return Math.floor(availableValues.sort(sort)[0] / recipeValues.sort(sort)[0])
+    }
+
+    recipe = { flour: 500, sugar: 200, eggs: 1 };
+    available = { flour: 1200, sugar: 1200, eggs: 5, milk: 200 };
+    console.log(cakes(recipe, available))
+</script> -->
+
+</html>
