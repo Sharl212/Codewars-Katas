@@ -1,4 +1,4 @@
-// ? 1- figure out how to generate fibonacci numbers
+// // ? 1- figure out how to generate fibonacci numbers
 // public static ulong[] productFib(ulong prod)
 // {
 //     ulong F1 = 0;

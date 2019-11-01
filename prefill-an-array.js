@@ -17,4 +17,4 @@ function prefill(n, v) {
     return fArray
 }
 
-console.log(prefill(false, 3)) // [1,1,1]
+console.log(prefill(20,1)) // [1,1,1]

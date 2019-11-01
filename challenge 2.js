@@ -5,4 +5,5 @@ function songDecoder(song){
     return song.split('WUB').filter(w => w !== '' && w !== ' ').join();
 }
 
-songDecoder("AWUBWUBWUBBWUBWUBWUBC")
+t = songDecoder("AWUBWUBWUBBWUBWUBWUBC")
+t
